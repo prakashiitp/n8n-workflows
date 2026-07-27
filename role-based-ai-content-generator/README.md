@@ -6,7 +6,7 @@ An AI-powered n8n workflow that generates personalized two-line poems based on u
 
 ## Workflow Preview
 
-![Workflow](workflow.png)
+<img width="1646" height="807" alt="image" src="https://github.com/user-attachments/assets/2c49e925-bb0b-4b27-ac07-ca888f487492" />
 
 ---
 
