@@ -10,21 +10,23 @@ An AI-powered n8n workflow that generates personalized two-line poems based on u
 
 ---
 
-## How It Works
+## Workflow
 
-User fills the n8n form
+```text
+Form Submission
         ↓
-Store response in Airtable
+Create Airtable Record
         ↓
-Route using Switch node
+Switch (Profession)
         ↓
-Update record based on profession
+Update Airtable Record
         ↓
-Generate personalized poem with AI Agent + Gemini
+AI Agent
         ↓
-Update generated poem back to Airtable
-
----
+Google Gemini
+        ↓
+Update Poem in Airtable
+```
 
 ## Features
 
@@ -80,6 +82,6 @@ But his bad looks turn people away.
 
 ## Files
 
-workflow.json → n8n workflow
+AI Role-Based Content Generator.json → n8n workflow
 
 workflow.png → Workflow architecture
