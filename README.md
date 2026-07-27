@@ -1,13 +1,13 @@
 # n8n Workflows
 
-A curated collection of AI-powered workflows built with n8n, featuring AI Agents, LLMs, RAG, MCP, APIs, databases, automations, and real-world business use cases.
+A curated collection of AI-powered workflows built with n8n, showcasing AI Agents, LLMs, RAG, MCP, APIs, databases, and real-world automation use cases.
 
 ## Workflows
 
-| Workflow | Status |
-|----------|--------|
-| AI Role-Based Content Generator | ✅ |
-| More workflows coming soon... | 🚧 |
+| Workflow | Description | Status |
+|----------|-------------|:------:|
+| AI Role-Based Content Generator | Generates personalized AI content based on user roles and input. | ✅ |
+| More workflows coming soon... | New AI automations and integrations will be added regularly. | 🚧 |
 
 ## Tech Stack
 
@@ -16,14 +16,43 @@ A curated collection of AI-powered workflows built with n8n, featuring AI Agents
 - Google Gemini
 - OpenAI
 - Claude
-- MCP
 - RAG
+- MCP
 - Airtable
 - Google Sheets
-- APIs
+- REST APIs
 - Webhooks
-- Databases
+- SQL / NoSQL Databases
+
+## Repository Structure
+
+```
+n8n-workflows/
+├── role-based-ai-content-generator/
+│   ├── workflow.json
+│   ├── README.md
+│   └── workflow.png
+│
+└── More workflows coming soon...
+```
+
+## What's Inside?
+
+This repository will continue to grow with workflows covering:
+
+- AI Agents
+- LLM Applications
+- RAG Pipelines
+- MCP Integrations
+- Content Generation
+- Email Automation
+- Social Media Automation
+- CRM Workflows
+- Document Processing
+- Business Automations
+- Productivity Workflows
+- API Integrations
 
 ---
 
-⭐ Feel free to explore, learn, and reuse these workflows.
+⭐ If you find this repository useful, consider giving it a star. Feedback, ideas, and contributions are always welcome.
