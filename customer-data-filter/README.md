@@ -4,7 +4,7 @@ A simple n8n workflow that retrieves customer records, restructures the data, an
 
 ## Workflow Preview
 
-![Workflow](workflow.png)
+![Workflow](workflow.png.png)
 
 ## How it Works
 
@@ -42,5 +42,5 @@ Customer records from the n8n Training Customer Datastore.
 
 ## Files
 
-- `workflow.json` — n8n workflow
-- `workflow.png` — Workflow preview
+- `Customer Test.json` — n8n workflow
+- `workflow.png.png` — Workflow preview
