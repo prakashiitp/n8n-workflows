@@ -7,6 +7,7 @@ A curated collection of AI-powered workflows built with n8n, showcasing AI Agent
 | Workflow | Description | Status |
 |----------|-------------|:------:|
 | AI Role-Based Content Generator | Generates personalized AI content based on user roles and input. | ✅ |
+| Customer Data Filter | Retrieves customer records, transforms fields, and filters data using conditional logic. | ✅ |
 | More workflows coming soon... | New AI automations and integrations will be added regularly. | 🚧 |
 
 ## Tech Stack
