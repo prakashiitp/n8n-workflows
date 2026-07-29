@@ -1,0 +1,201 @@
+customer_id,first_name,last_name,gender,email,phone_number,birthdate,address,city,country,plan,status,signup_date,last_purchase,total_orders,total_spent
+1,Heather,Smith,Non-binary,denniswoods@example.org,+1-567-762-9754x51778,1977-02-03,60301 Diamond Cliff Apt. 046,East Christopher,Macao,Basic,Churned,2022-12-19,2023-03-24,56,9535.21
+2,Christopher,Goodwin,Female,brownkristen@example.com,(388)657-1655x676,1979-06-16,47515 Cortez Vista Suite 180,Jessicaville,Congo,Enterprise,Inactive,2023-11-10,2024-04-23,89,6001.15
+3,Barbara,Cooper,Male,hoovercarrie@example.org,(914)628-6923,1970-02-26,4441 Armstrong Pine Suite 785,Garrettton,Vietnam,Enterprise,Active,2023-12-07,2024-06-03,99,14324.1
+4,Lucas,Nguyen,Female,antoniosanford@example.com,929.558.9640x326,1976-11-04,9996 Fields Flat Apt. 261,Taylorchester,Argentina,Free,Inactive,2024-12-06,2025-05-16,114,6199.58
+5,Thomas,Galvan,Non-binary,jessicaperez@example.net,001-501-872-8803x268,1984-07-06,15322 Ashley Falls Apt. 456,Julieborough,Maldives,Basic,Active,2023-11-01,2025-07-14,115,6916.77
+6,Destiny,Williams,Male,zreyes@example.org,988.671.4247x0534,2005-05-18,503 Smith Station,Caseyburgh,Poland,Free,Active,2026-07-04,2026-07-08,30,8455.12
+7,Derek,Davis,Female,maria46@example.org,2314427142,2007-10-22,785 Samuel Trail,West James,Luxembourg,Premium,Churned,2025-05-22,2026-03-13,98,10746.11
+8,Mario,Ayers,Male,benjamingray@example.org,+1-323-450-5217x3525,1994-12-17,923 Andrew Skyway,East Michaelville,Haiti,Basic,Inactive,2025-09-06,2026-03-11,5,7264.31
+9,Fernando,Smith,Male,hopkinsmatthew@example.org,402.505.9993,1958-11-10,3560 Sara Flats Suite 843,Anneville,Brazil,Free,Inactive,2025-04-05,2026-03-22,66,2439.24
+10,John,Hayes,Female,patricia93@example.net,3723678047,1988-01-28,636 Guerrero Lodge Apt. 857,Millerborough,French Guiana,Premium,Active,2026-03-03,2026-07-15,119,6970.08
+11,Mark,Franklin,Male,knappgeorge@example.org,(826)426-5452x24014,1957-09-07,72126 Samuel Shores,Meganland,Benin,Enterprise,Churned,2025-08-02,2025-12-31,25,1323.31
+12,Kathleen,Johnson,Male,trevor24@example.org,001-744-419-6879,2005-12-09,42021 Cross Alley,Porterville,Cook Islands,Premium,Churned,2023-01-27,2025-06-30,85,6881.48
+13,Julie,Wright,Male,hansenmichelle@example.com,616-496-0162x143,1987-06-22,438 Zachary Wall Apt. 012,Forbesfurt,Norfolk Island,Premium,Active,2026-04-19,2026-06-29,49,14212.77
+14,Craig,Sanchez,Female,amartin@example.com,437.709.9520x4912,1966-04-21,04315 Kimberly Brook Apt. 515,Manningland,Nicaragua,Basic,Active,2025-12-21,2026-02-23,34,9832.97
+15,Deanna,Pierce,Non-binary,uharper@example.com,(254)557-0797x5683,1998-05-25,851 Walters Inlet Suite 122,Heidiburgh,Cuba,Free,Inactive,2022-10-14,2025-01-11,119,13194.86
+16,Theresa,Bowen,Female,brianrose@example.org,001-977-454-2221x96914,1991-02-19,141 Tara Shores,Susanberg,Congo,Enterprise,Churned,2025-06-28,2025-07-15,90,5943.1
+17,Mark,Daniel,Non-binary,david27@example.net,495.203.2969x8524,1992-07-11,46166 Kimberly Fall Suite 027,Robertville,Thailand,Free,Churned,2023-09-05,2025-01-10,51,6441.78
+18,Sharon,Robinson,Non-binary,nicholsroger@example.com,910-881-5887x175,1956-06-17,891 Holly Rapids Suite 796,East Shannon,Guernsey,Premium,Churned,2026-02-03,2026-03-22,88,4780.73
+19,Jeffrey,Davis,Female,justin90@example.org,+1-351-615-3623x9937,1970-06-16,400 Crystal Summit,Lake Josephville,Vietnam,Enterprise,Active,2026-04-01,2026-07-20,58,10532.55
+20,Elizabeth,Reynolds,Male,basselijah@example.com,369-273-3121x53815,1990-03-02,747 Tina Mountain,Richardsonshire,Mauritania,Premium,Active,2025-03-29,2025-06-10,94,6092.97
+21,Adam,Wade,Female,andreablair@example.net,444-596-5365,1992-04-24,670 Lynch Coves,Lake Brentside,Sudan,Premium,Active,2024-01-12,2025-07-01,88,5503.21
+22,Valerie,Herrera,Non-binary,otran@example.com,(981)943-4423,2003-03-24,02439 Breanna Viaduct Suite 282,Hansenmouth,Kazakhstan,Premium,Inactive,2026-02-22,2026-05-30,88,2430.18
+23,Jesse,Everett,Non-binary,gilbert54@example.com,343-267-1013x74520,1987-05-17,1604 Pearson Creek,Matthewsberg,Cameroon,Premium,Active,2024-06-06,2026-06-02,2,532.87
+24,Mark,Boyd,Female,rgonzales@example.net,801-635-4877x268,1957-03-22,3868 Sawyer Manors,Lake Benjamin,Malawi,Free,Inactive,2025-03-05,2025-05-17,47,2639.66
+25,Daniel,Frost,Male,turnergeorge@example.org,+1-582-386-7403x8750,1992-06-29,607 Griffin Port,Braytown,American Samoa,Premium,Churned,2022-08-04,2025-12-24,85,10613.69
+26,Dean,West,Female,kristy57@example.org,485.941.3872x72483,1991-10-07,4423 Brewer Crescent Suite 623,Port Alanville,Burkina Faso,Free,Active,2025-06-13,2025-10-11,73,9605.81
+27,Jorge,Barnes,Non-binary,sullivanjames@example.net,+1-479-597-8809x888,2007-07-11,45913 Gonzalez Shore Suite 045,West Sara,Monaco,Premium,Active,2025-10-31,2026-05-25,66,14226.35
+28,Cody,Figueroa,Non-binary,michaelhensley@example.org,001-240-532-6908x95864,1994-04-23,9795 Belinda Mission Suite 919,Thomasport,Equatorial Guinea,Free,Inactive,2024-11-19,2026-07-13,46,11655.19
+29,Allison,Harrison,Non-binary,ronnie87@example.net,001-630-666-5132,1977-02-12,8292 Davidson Loaf Suite 285,Finleyberg,Faroe Islands,Enterprise,Churned,2023-01-07,2025-02-18,12,12805.96
+30,Jeffrey,Mcgrath,Male,jennifer41@example.org,(349)676-9041x807,1984-07-23,7931 Wilson Shore,North Russell,Trinidad and Tobago,Free,Churned,2023-04-13,2024-06-06,89,11314.66
+31,Juan,Silva,Male,david31@example.com,001-493-671-6239x1581,1970-09-12,35107 Holmes Turnpike,Richardfort,Gibraltar,Premium,Inactive,2024-04-22,2025-10-18,33,13810.54
+32,Brenda,Scott,Female,emercado@example.com,207.770.4048,1958-05-30,14834 Jordan Drive Suite 048,Brycebury,Holy See (Vatican City State),Premium,Churned,2023-12-09,2024-12-21,81,3458.77
+33,Ronnie,Rivera,Female,leahthomas@example.net,001-368-931-9825x96191,1980-08-15,2537 Michelle Mountain Suite 641,West Ashleyborough,Cook Islands,Premium,Churned,2024-06-01,2024-11-20,78,14269.85
+34,Sarah,Zhang,Female,yrose@example.net,899.784.0877x70311,1992-06-06,772 Charlotte Mission,Wandaberg,Monaco,Enterprise,Inactive,2024-02-12,2025-10-13,80,5738.13
+35,Amanda,Webster,Female,pamelahodges@example.net,001-831-968-4168x6049,1988-01-23,232 Katherine Point Suite 430,Port Louisstad,Spain,Enterprise,Inactive,2025-07-31,2026-01-20,10,10114.24
+36,Heather,Beck,Female,browndavid@example.org,(531)579-2230,1979-10-01,375 Conrad Crest Suite 840,East Albert,Madagascar,Free,Churned,2026-02-23,2026-04-26,29,12825.79
+37,Traci,Hanna,Female,jennifer01@example.net,740-979-0686x79225,1967-08-06,6164 Johnson Land,South Lisaburgh,Heard Island and McDonald Islands,Enterprise,Churned,2023-08-01,2023-11-06,110,6161.31
+38,Valerie,Baker,Female,chelsea52@example.com,001-837-793-9739x372,1972-06-16,403 Huynh Hill,Mackville,Tajikistan,Enterprise,Active,2024-12-15,2025-03-26,13,1713.28
+39,Kelly,Herrera,Female,jameswatts@example.org,+1-880-580-5959x20073,1964-01-15,63435 Williams Light Apt. 187,South Elizabethville,Burkina Faso,Enterprise,Inactive,2023-07-15,2026-01-04,24,9915.95
+40,Jay,Webster,Female,valerielambert@example.org,(771)931-6702x06762,2000-12-12,72877 Stephanie Flat Suite 666,Lake Susan,Eritrea,Free,Churned,2026-07-23,2026-07-25,40,11780.09
+41,Zachary,Peters,Female,jacobskinner@example.org,210-887-2279x57358,1996-04-26,12993 Cantrell Bypass Suite 226,Gonzalezborough,French Guiana,Premium,Active,2024-11-06,2025-06-01,54,586.75
+42,Juan,Moran,Non-binary,jhansen@example.net,984.361.6540,1956-01-15,0329 Sarah Extensions Suite 149,Rodriguezmouth,Belize,Enterprise,Active,2023-11-27,2024-11-20,109,6487.52
+43,Daniel,Stein,Male,garrett88@example.org,944.865.9372x8942,1988-06-24,871 Keith Stream,Nelsonshire,Guadeloupe,Free,Churned,2025-02-04,2025-08-27,93,2131.69
+44,Tracy,Hunt,Non-binary,tamara49@example.net,952.521.8897x94252,1991-02-26,089 Matthew Square,Adamview,Northern Mariana Islands,Basic,Churned,2023-03-09,2025-12-09,62,11586.22
+45,Carol,Taylor,Male,johnstonedward@example.com,4519260653,1994-06-07,27122 Howard Walk,Fritzport,Mauritania,Enterprise,Churned,2025-11-09,2026-04-09,26,13212.65
+46,Maria,Leonard,Non-binary,sjohnson@example.net,632-543-1988x01589,1962-06-11,6315 Brooke Manor,New Michaeltown,Libyan Arab Jamahiriya,Enterprise,Inactive,2023-06-02,2026-04-30,3,10356.79
+47,Brandy,Schneider,Female,marshalex@example.com,5249396196,1992-01-12,198 Ho Springs,East Michelleport,Equatorial Guinea,Premium,Active,2023-06-11,2025-07-08,89,8714.56
+48,Catherine,Jenkins,Male,erin12@example.org,(389)665-1533x82170,1978-12-10,37084 Price Valleys Apt. 862,West Keith,Mexico,Enterprise,Inactive,2024-03-12,2025-02-09,39,13779.65
+49,Elizabeth,Johnson,Male,syoung@example.org,601.914.1246x230,1998-05-03,0474 Charlotte Turnpike,New Mary,Saint Lucia,Enterprise,Active,2026-05-07,2026-05-15,23,11086.78
+50,Donna,Mckay,Female,amanda73@example.org,001-515-579-3828x4500,2008-02-13,996 Hill Drive,North Andreafort,Montserrat,Basic,Churned,2024-08-29,2026-03-23,6,4616.66
+51,Lisa,Blackwell,Female,tracy48@example.com,(303)478-2682,1985-07-11,06487 Fuller Burg,North Ashley,Hong Kong,Premium,Inactive,2022-11-28,2025-01-21,86,10518.37
+52,Anthony,Smith,Female,john93@example.net,001-606-589-6591x2570,1961-03-10,256 Anna Keys,Jeanneburgh,Slovakia (Slovak Republic),Enterprise,Inactive,2023-01-16,2026-04-10,10,3516.39
+53,Timothy,Mcguire,Female,chelsea04@example.net,+1-548-783-6128x3155,1991-01-20,0759 Donovan Harbors Apt. 878,North Susanbury,Netherlands Antilles,Free,Active,2023-06-08,2025-10-15,67,2125.55
+54,Samantha,Johnson,Female,gregorysanchez@example.com,5939594652,1957-11-25,09972 Curtis Drive,Monicaland,Nauru,Free,Churned,2026-05-07,2026-06-25,15,1280.04
+55,Laura,Riddle,Female,zimmermanjason@example.com,(683)778-8952x105,1982-01-12,439 Amy River Suite 270,Torresfurt,Saint Kitts and Nevis,Premium,Active,2025-07-21,2025-08-26,80,8015.41
+56,Ebony,Carpenter,Male,nicolenguyen@example.net,001-771-663-9398x043,1978-11-26,35186 Ayala Turnpike,Guzmanshire,Svalbard & Jan Mayen Islands,Free,Active,2024-07-18,2024-09-23,18,11227.82
+57,Maria,Robinson,Non-binary,mcdanielhaley@example.net,+1-882-872-7907x48804,1987-12-12,63321 Wendy Parkway Apt. 691,South Michaeltown,Tokelau,Enterprise,Inactive,2023-04-27,2023-08-14,11,2831.96
+58,Danny,Mann,Male,zgilbert@example.org,(827)970-6789x470,1971-03-10,41028 Manuel Harbors Apt. 970,West Bryan,Romania,Free,Inactive,2024-02-24,2026-02-09,62,7634.4
+59,Valerie,Pham,Non-binary,judithpoole@example.org,+1-876-350-5900,1999-05-19,6022 Yvonne Vista Apt. 095,Gonzalezchester,Montenegro,Enterprise,Active,2023-05-12,2025-07-01,106,5798.74
+60,Danielle,Ramirez,Male,dylan46@example.com,842.684.3991x813,1996-06-20,7901 Amy Hills Apt. 085,Port Kennethchester,Brunei Darussalam,Enterprise,Active,2022-07-30,2024-06-10,3,14172.7
+61,Amber,Walsh,Non-binary,snowangela@example.com,+1-352-618-8111x82898,1963-06-14,69953 Robin Turnpike,Hannahton,Somalia,Basic,Churned,2025-09-15,2026-05-30,78,493.59
+62,Matthew,Carr,Non-binary,jose27@example.com,+1-847-268-4755x140,1976-05-25,448 Henry Drives,South Sharon,Saint Pierre and Miquelon,Basic,Churned,2024-06-14,2026-03-27,108,11690.68
+63,Jean,Mclaughlin,Non-binary,rodriguezanthony@example.com,828.711.6371x739,1981-10-01,64571 Hughes Flats,North Brittany,Uruguay,Free,Inactive,2025-01-13,2026-07-14,107,3543.0
+64,Randy,Orr,Male,ngarcia@example.net,(654)288-3064x8155,1970-01-01,4518 Page Flats Suite 954,Gordonport,Italy,Free,Churned,2022-10-22,2024-07-05,32,4897.55
+65,Susan,Garrett,Female,amybush@example.com,(718)521-8015x9722,2006-03-23,6411 Edwards Circle Suite 639,Port Margaretport,Ethiopia,Basic,Inactive,2023-11-24,2024-03-16,40,9915.08
+66,Ryan,Stevenson,Male,wjones@example.com,001-247-775-9240x539,1965-08-04,5024 Shelly Summit Apt. 498,Salazarside,Hungary,Enterprise,Inactive,2024-02-13,2026-07-25,56,1474.5
+67,Henry,Brooks,Female,ramossharon@example.org,+1-590-509-7528,1973-02-28,600 Robin Track Apt. 586,South Albert,Marshall Islands,Enterprise,Inactive,2026-07-18,2026-07-21,29,9287.26
+68,Raymond,Butler,Non-binary,michaelberger@example.com,390-739-5560,2001-03-23,3100 Meghan Road,East Sarah,Burundi,Free,Inactive,2025-02-17,2025-09-08,6,1053.85
+69,Kelly,Miller,Non-binary,jonathanhebert@example.org,+1-944-850-7826x427,1966-05-04,29890 Neal Route Apt. 281,West Maria,Ghana,Premium,Active,2024-05-29,2025-04-11,75,14858.48
+70,Angela,Fletcher,Male,howardangela@example.net,9676807813,1964-11-16,87988 Cindy Junction Apt. 334,Port Barbara,Lithuania,Basic,Churned,2024-06-19,2025-04-09,100,7893.09
+71,Jose,Garcia,Female,hubbardsarah@example.com,001-999-267-0575x622,1960-10-25,47047 Harrison Mount Suite 662,South John,American Samoa,Enterprise,Inactive,2022-12-18,2024-05-29,38,13675.46
+72,Alejandra,Hernandez,Male,leslie43@example.org,7145803490,1973-06-17,5040 Melissa Islands Apt. 960,Ethanfurt,Andorra,Enterprise,Active,2026-07-19,2026-07-21,11,683.14
+73,Leon,Reed,Non-binary,moorejane@example.net,+1-564-207-4324x914,2001-03-20,9926 Jones Summit Suite 282,Youngburgh,Mayotte,Enterprise,Churned,2022-09-22,2026-03-25,63,13748.26
+74,Dylan,Rose,Non-binary,randolphtamara@example.com,+1-582-313-2000x121,1985-04-14,20272 Thomas Fork Apt. 305,New Juanside,Saint Helena,Premium,Active,2026-03-06,2026-06-27,9,9191.29
+75,Tiffany,Young,Non-binary,john51@example.com,(859)224-9900x39508,1984-12-03,67899 Andrea Ports,Stewartstad,Comoros,Enterprise,Active,2023-03-15,2026-02-03,59,7318.63
+76,Joyce,Wolf,Female,ofields@example.org,604-289-1955,1957-09-23,684 Robinson Row,Lake Keith,Albania,Premium,Churned,2023-04-20,2023-12-16,108,4271.69
+77,Ashley,Bryant,Male,christinaevans@example.net,256-953-5868x633,1994-05-07,8225 Joshua Rest,Lindseyview,Yemen,Basic,Active,2023-06-07,2025-05-22,86,5239.56
+78,Angela,Crawford,Male,millerjason@example.com,(941)937-5787x24649,2008-06-18,9942 Dana Forest Suite 226,South Dwayne,Switzerland,Basic,Churned,2024-08-13,2025-11-25,34,1522.76
+79,Michael,Gonzalez,Female,david07@example.net,859.265.1804,1992-05-22,931 Farley Rapid,Port Adammouth,Comoros,Premium,Active,2024-11-14,2025-09-30,95,448.51
+80,Shannon,Clark,Female,robin28@example.com,(256)409-7227,1980-10-30,145 Melanie Pike,Brendanburgh,Belize,Basic,Inactive,2025-02-18,2025-06-29,19,8376.43
+81,Brady,Smith,Male,wilsonchristopher@example.com,287.248.7877x62815,2006-03-21,94570 Samantha Parks Suite 496,East Emilyberg,Cape Verde,Premium,Churned,2025-07-25,2026-06-17,11,11666.71
+82,Kiara,Gomez,Male,fbailey@example.org,9472105692,2007-09-20,46275 Holmes Gardens Suite 165,Christopherfurt,Norfolk Island,Enterprise,Active,2026-05-20,2026-07-20,50,10461.78
+83,Lindsay,Bowman,Non-binary,gregory56@example.net,980-306-4913x530,1976-07-16,7310 John Oval,Port Adamchester,Bosnia and Herzegovina,Free,Inactive,2024-09-12,2024-11-30,23,3832.64
+84,Jennifer,Hill,Male,waltersrobert@example.net,681.467.8384,2001-04-16,6547 Whitehead Green Suite 681,Lake John,Kazakhstan,Free,Active,2025-08-08,2026-03-18,1,3515.5
+85,Shannon,Chaney,Female,martinezdaniel@example.net,(604)916-6675x385,2003-03-29,712 Cole Spur Suite 771,Russellbury,Belarus,Enterprise,Active,2024-06-23,2025-03-05,84,11012.59
+86,Andrew,Garcia,Female,rayperez@example.com,9307101600,1970-05-27,3549 Drew Canyon Suite 499,Barbaraland,Kuwait,Free,Active,2026-06-26,2026-07-25,117,3640.61
+87,Keith,Rosario,Female,cuevasadam@example.org,730-550-1420,1992-11-14,89067 Goodwin Grove Apt. 142,Melaniefort,Montenegro,Free,Churned,2024-07-01,2025-02-17,31,1002.21
+88,John,Steele,Female,lisa30@example.org,001-907-500-3478,1959-01-29,43780 Luis Harbor Apt. 931,Justinton,Burkina Faso,Basic,Churned,2025-10-21,2025-12-15,95,9517.08
+89,Dylan,Harris,Non-binary,kathy70@example.org,(209)583-4997,2000-11-27,8247 Jordan Prairie,Brooksville,Bangladesh,Basic,Active,2023-04-30,2026-04-17,45,3163.92
+90,Kimberly,Davenport,Non-binary,patriciaodom@example.net,001-918-521-3595,1978-01-14,59066 Matthew Lights,Hoffmanhaven,Tunisia,Premium,Active,2025-08-21,2026-01-09,48,11809.91
+91,Jake,Adams,Female,rsloan@example.net,6106748934,1983-06-01,529 Decker Spurs Suite 854,Valdezside,Holy See (Vatican City State),Enterprise,Inactive,2024-11-04,2025-08-06,66,5487.83
+92,Sheryl,Clark,Non-binary,howedylan@example.net,+1-372-410-6327x69681,1992-01-09,192 Hayes Bypass Apt. 876,Christophershire,Vanuatu,Premium,Churned,2026-06-09,2026-06-28,24,8593.88
+93,Steven,Turner,Non-binary,angelamitchell@example.com,(364)417-3287,1988-12-24,089 Andrea Centers Apt. 302,Lake Rhonda,Bosnia and Herzegovina,Enterprise,Inactive,2026-06-13,2026-07-18,108,6731.27
+94,Patty,Whitney,Female,tburke@example.com,3013999136,1970-08-25,098 William Pine Apt. 827,Ashleyside,Western Sahara,Free,Inactive,2024-05-03,2025-03-28,49,7652.11
+95,Julie,Short,Non-binary,uramsey@example.com,971-831-5394x33759,2007-04-01,22243 Baker Way Apt. 683,Romeromouth,Tokelau,Basic,Active,2024-12-02,2026-02-23,11,6149.5
+96,Kyle,Riley,Male,ddavis@example.com,975-382-5461,1956-05-29,227 Nelson Rest,Vickiville,Belarus,Free,Inactive,2024-10-29,2024-11-10,57,13971.04
+97,Kenneth,Allison,Non-binary,hellis@example.org,3528187341,1976-04-21,7566 Blevins Light,Russellchester,New Caledonia,Premium,Churned,2022-11-12,2022-12-04,43,13600.75
+98,Christopher,Bean,Female,lorettanelson@example.net,+1-217-847-7769x84109,1964-10-13,81080 Hunt Locks,Hodgetown,Korea,Premium,Churned,2026-01-06,2026-02-22,73,5050.49
+99,Deborah,Vasquez,Female,imaxwell@example.com,718-522-7443x2713,1970-06-11,91097 Smith Lake Suite 616,Lake Angela,Liechtenstein,Basic,Inactive,2025-04-24,2026-02-03,14,1652.87
+100,Michelle,Baker,Female,orodriguez@example.com,374-797-8873,2004-09-12,340 David Points,Victoriabury,Bulgaria,Premium,Churned,2026-02-09,2026-02-25,49,8829.94
+101,Jessica,Powell,Female,matthewcoleman@example.org,941.970.1979x8534,1998-01-01,6457 Robinson Burgs,Joshuaton,Guatemala,Free,Active,2025-12-14,2026-02-13,93,6528.57
+102,Kevin,Brown,Non-binary,kellycatherine@example.com,(995)936-2756x9356,1975-10-28,9789 Brandon Path Apt. 155,Port Patrickburgh,Belize,Enterprise,Churned,2025-05-14,2026-06-19,25,6152.58
+103,Timothy,Harvey,Female,lauren47@example.com,+1-236-900-9519,2005-01-28,93969 Rebecca Road Apt. 314,Jimenezland,United States Virgin Islands,Basic,Churned,2024-04-30,2026-06-04,34,3853.65
+104,Grace,Andrews,Male,matthewjones@example.com,001-571-722-8576x55382,1959-12-11,585 Karen Brook,Sierramouth,Niue,Free,Active,2023-12-01,2024-11-11,53,13474.12
+105,Steven,Cole,Female,gmiller@example.org,838.712.6007x6921,1959-01-27,69698 Crystal Terrace,Donovanshire,Montenegro,Enterprise,Churned,2023-10-27,2026-06-20,81,3685.95
+106,Theodore,Foster,Female,fdalton@example.net,3113375453,1984-12-05,2234 Mcclure Brook Apt. 458,North Hunterfort,Croatia,Basic,Inactive,2024-11-11,2025-06-16,58,3057.95
+107,Thomas,Lopez,Male,doylejacob@example.org,+1-206-894-3302,2005-10-30,3583 Travis Flats Suite 939,Smithfurt,Sri Lanka,Enterprise,Churned,2023-12-22,2025-03-30,98,2294.39
+108,Robert,Gilbert,Male,christinapowers@example.net,+1-851-232-9928,2005-05-15,162 Madden Parkway Apt. 967,Campbellmouth,Equatorial Guinea,Basic,Active,2024-08-04,2025-12-10,35,9853.48
+109,Christopher,Larsen,Male,gregghorton@example.net,724-916-9881x53013,1999-12-11,1637 Gomez Stream Suite 434,North Debra,Bahamas,Enterprise,Inactive,2022-10-12,2023-10-14,57,4847.82
+110,Keith,Jones,Non-binary,david26@example.net,(473)311-7159,1971-06-16,05397 Campbell Forges,East Mitchell,South Georgia and the South Sandwich Islands,Basic,Active,2024-05-30,2024-09-28,18,9912.97
+111,Justin,Gardner,Male,dcontreras@example.net,001-729-205-7788,2002-08-26,156 Joshua Camp,Traceyside,Cape Verde,Basic,Inactive,2023-03-18,2024-07-27,55,5547.17
+112,Emily,Solis,Female,ubranch@example.com,827.939.6687x449,1986-10-31,71311 Bates Ranch,Kyletown,Heard Island and McDonald Islands,Basic,Active,2026-06-22,2026-07-23,6,13040.43
+113,Emily,Buckley,Female,marylong@example.com,+1-828-781-4669x62587,1988-03-23,823 Robert Crescent Suite 225,Lake Edward,Colombia,Premium,Active,2024-05-07,2024-12-30,105,6859.41
+114,Bailey,Carrillo,Non-binary,njackson@example.org,606-624-7874,1994-10-29,31821 Vickie Terrace Suite 147,Elizabethmouth,Palestinian Territory,Free,Active,2023-12-01,2026-05-06,102,2723.78
+115,Timothy,Walker,Female,allenkyle@example.org,+1-794-387-1828x9291,1964-04-22,849 Christine Glen Apt. 270,Pamelaport,Bhutan,Basic,Inactive,2023-11-21,2025-10-06,42,7857.43
+116,Natasha,Crawford,Male,knelson@example.net,+1-312-931-9269x2951,1986-07-05,158 Martinez Track Suite 753,Hortonfurt,Latvia,Basic,Churned,2025-02-05,2026-06-24,98,5341.62
+117,Hayley,Chambers,Male,eelliott@example.net,757-996-3579x7843,1971-08-29,954 Steven Forges Suite 534,New Angela,Colombia,Premium,Active,2026-05-03,2026-07-25,58,11836.95
+118,Brenda,Joyce,Non-binary,hbrown@example.net,3306535006,1991-08-24,417 Gray Oval,Port Kelsey,Saint Helena,Basic,Churned,2025-10-02,2026-01-04,82,4878.48
+119,Lindsay,Sims,Female,gravesjill@example.org,852-381-5595,1960-01-27,158 Julie Throughway,North Sarah,Yemen,Free,Inactive,2024-02-07,2026-07-25,55,1210.88
+120,Robert,Simon,Non-binary,kjackson@example.org,514-641-9316x815,1970-04-05,50062 Tanya Place Suite 918,Fieldsbury,Nauru,Basic,Churned,2023-03-30,2024-10-31,80,11176.02
+121,Jeffrey,Aguirre,Male,lopezthomas@example.org,5572340157,1966-09-15,3304 Christopher Lakes Suite 965,North Nicole,United States Virgin Islands,Enterprise,Inactive,2025-02-06,2026-07-14,107,10427.31
+122,Jessica,Dominguez,Female,cherylgray@example.org,(981)653-4267x803,1972-11-26,2116 Erin Ramp Suite 456,Lake Benjaminmouth,Mauritius,Basic,Churned,2026-06-19,2026-07-12,11,12389.06
+123,Haley,Wade,Non-binary,kenneththompson@example.com,+1-587-594-6783x26991,1973-06-11,05223 Wilcox Summit Suite 752,Berryside,Latvia,Enterprise,Churned,2025-07-06,2025-08-30,37,4686.09
+124,James,Collins,Male,trujillocarla@example.net,(935)762-3169x8755,1963-03-16,41035 Turner Vista Suite 907,Townsendstad,Niue,Enterprise,Inactive,2023-08-26,2026-03-28,73,9554.82
+125,Courtney,Shaffer,Non-binary,chapmanmatthew@example.net,448-471-4402x95481,1980-06-07,407 Jennifer Dale,Kemphaven,Angola,Premium,Churned,2023-04-27,2025-10-06,65,11379.79
+126,Eric,Moody,Female,jaimeharper@example.org,+1-713-346-8218x3707,1995-10-10,690 Allen Centers Apt. 404,Solomonmouth,Morocco,Premium,Churned,2025-07-15,2026-04-08,75,8756.76
+127,Tyler,Wood,Female,blakewhitaker@example.com,531-485-4527x15815,1996-12-29,005 Davis Center Suite 784,North Seanton,Peru,Enterprise,Active,2026-04-12,2026-05-01,16,6137.29
+128,James,Cox,Female,amandabruce@example.net,(817)755-2864x24054,1974-01-26,13315 Jerry Oval,Nicholasburgh,Lebanon,Basic,Active,2025-03-31,2026-07-06,21,11228.23
+129,Isaiah,Becker,Male,elizabeth68@example.net,001-929-717-3558x227,2008-04-05,35061 Jessica Cove Apt. 020,Seanburgh,Botswana,Free,Churned,2026-03-17,2026-06-16,97,10456.41
+130,Joanne,Jacobson,Male,vasquezjennifer@example.com,834-676-3735,1999-01-24,72019 Sharp Alley Suite 007,Emilyburgh,Tonga,Basic,Active,2023-08-27,2025-06-10,109,11147.41
+131,Diane,Foster,Non-binary,tiffany44@example.org,001-941-711-8459x428,1994-07-05,156 Smith Parkways,Justinmouth,Comoros,Free,Active,2024-05-24,2024-10-23,3,8189.19
+132,James,Walker,Male,qhudson@example.net,001-545-335-3557x185,1975-11-30,11037 Danny Gardens Apt. 380,North Jessicafort,Gambia,Enterprise,Churned,2022-12-06,2026-04-16,70,2460.51
+133,Amy,Taylor,Female,ronaldwebster@example.net,(619)742-1003,1973-02-28,822 Bauer Stream,North Erinhaven,Andorra,Premium,Inactive,2025-07-31,2026-06-21,83,2753.35
+134,Kimberly,Gonzales,Non-binary,brettrodriguez@example.org,001-649-688-1032x1513,1996-10-31,42329 Aaron Mews Suite 702,East Lisaburgh,Taiwan,Basic,Active,2023-08-07,2025-07-09,82,8549.72
+135,Grant,Mullins,Non-binary,jamesdebra@example.net,411-517-7970,2006-01-14,4505 Johnny Village Suite 656,Ballardfurt,Tuvalu,Enterprise,Churned,2025-10-19,2025-12-15,45,14686.73
+136,Samuel,Hall,Female,newtonvalerie@example.com,586.256.8225,2000-07-23,08471 Moreno Valley Apt. 008,Benjaminbury,Australia,Enterprise,Inactive,2022-09-16,2025-04-14,51,3760.21
+137,Lawrence,Franklin,Male,richard73@example.net,969-314-1953,1976-02-02,31754 Wang Cape Suite 366,Petersland,Liberia,Basic,Inactive,2025-11-12,2026-04-16,101,6209.38
+138,Elijah,Gray,Female,adkinsjames@example.com,+1-897-556-1038x686,1985-10-27,15580 Megan Ranch,Lake Jermaineside,Antigua and Barbuda,Free,Inactive,2025-11-18,2026-03-24,106,1589.26
+139,Patrick,Lopez,Non-binary,edward03@example.net,001-592-583-4090x34729,1975-05-11,936 Elizabeth Bridge Apt. 003,Robertside,United States of America,Basic,Inactive,2025-07-07,2025-11-22,89,7863.02
+140,Timothy,Conley,Male,gilmoredouglas@example.com,(293)365-3708x4776,2000-09-09,083 Mitchell Valley Suite 813,Lake Autumn,Liechtenstein,Free,Active,2026-06-30,2026-07-16,48,4209.37
+141,Marvin,Gomez,Female,allisonhumphrey@example.org,+1-649-319-7244x020,1970-12-09,7435 Anne Coves,East Kelsey,New Zealand,Free,Churned,2025-08-12,2026-03-08,35,2217.31
+142,Ellen,Rogers,Female,anna56@example.com,(495)544-0629x815,1983-04-22,8902 Ward Bypass Apt. 980,Jenniferchester,Malta,Free,Churned,2023-05-14,2024-11-07,31,116.86
+143,Brianna,Brown,Male,hillkristen@example.com,001-394-648-9525x09840,2000-11-09,34494 Bowman Squares,Castrostad,Lesotho,Premium,Active,2025-11-24,2026-01-01,21,5479.73
+144,Sarah,Peters,Male,nmaxwell@example.net,+1-284-484-4017x6155,1982-07-03,892 Lewis Island,Luisfurt,Guadeloupe,Basic,Inactive,2023-09-01,2026-07-11,39,3081.56
+145,Katherine,Wells,Male,briannaharris@example.net,(812)380-5925x969,1969-02-24,26886 Whitehead Passage Suite 139,Smithstad,United States Virgin Islands,Enterprise,Inactive,2026-03-20,2026-06-26,91,1147.08
+146,Amanda,Thompson,Female,nruiz@example.com,(657)476-5768x02306,1965-05-06,43093 Cox Lake,North Patricia,China,Basic,Churned,2023-02-24,2024-08-18,45,4156.3
+147,Kristen,Byrd,Male,olsenlisa@example.net,635-796-2982x70818,1991-06-25,49493 Mckinney Drive Suite 344,Andrewfurt,Chad,Enterprise,Active,2024-07-23,2024-11-10,4,12679.81
+148,Jennifer,Anderson,Female,michael59@example.com,(350)691-9296,1985-08-06,70149 Perry Run,West Jordanfurt,Oman,Basic,Inactive,2022-11-29,2026-06-09,89,6301.04
+149,Jennifer,Flores,Male,breanna04@example.org,672-526-9349x59474,1977-01-06,81237 Matthews Plaza Apt. 601,Swansonton,Pakistan,Free,Active,2025-03-13,2025-03-20,26,12373.57
+150,Joseph,Jennings,Male,paul16@example.com,739-206-1447,2007-06-12,0301 Burns Passage,Port Christophertown,Denmark,Premium,Churned,2025-04-26,2026-01-28,4,14422.46
+151,John,Hunter,Male,ramirezteresa@example.com,897-317-1968,2003-01-16,2909 Robert Creek,Port Austinland,Gambia,Enterprise,Inactive,2025-09-13,2026-04-07,33,6010.02
+152,Nicole,White,Non-binary,bobbyhardy@example.org,(737)524-6969,1959-04-22,79971 Charles Flat,South Johnathanmouth,Dominica,Free,Active,2024-03-07,2024-03-22,86,14321.97
+153,Travis,Robinson,Female,anita62@example.com,+1-468-650-7204x602,2005-01-03,262 Butler Walk Apt. 708,Lake Lawrence,Lao People's Democratic Republic,Enterprise,Inactive,2025-10-21,2026-01-22,74,1200.99
+154,Stephanie,Ross,Male,ksmith@example.com,9464157164,1975-09-24,417 Matthew Greens Apt. 898,North Lisaburgh,Hong Kong,Premium,Active,2025-02-20,2025-05-28,18,1933.92
+155,Sherry,Rice,Non-binary,ywalker@example.com,713-495-8288,1978-03-17,7044 Cummings Ridge,Billyshire,Bangladesh,Free,Active,2023-02-25,2026-04-02,61,12789.77
+156,Michele,Hodges,Non-binary,williamsmolly@example.com,928-589-4604x0425,1990-03-13,22798 Kristi Drive Apt. 567,Kathleenville,Iraq,Basic,Inactive,2025-02-12,2025-10-30,58,1417.84
+157,Teresa,Grant,Non-binary,bakermary@example.org,(724)748-7957x1187,1973-10-08,0074 Jennifer Square Apt. 525,Port Krystal,Bulgaria,Basic,Inactive,2025-01-23,2025-05-31,115,14036.99
+158,Craig,Smith,Male,fhanson@example.org,+1-377-915-7942x6435,1960-10-12,2602 Phillips Locks Suite 732,Patrickbury,Croatia,Basic,Inactive,2024-04-07,2025-08-04,28,5393.47
+159,Leslie,Jones,Non-binary,dcruz@example.org,2173899949,1990-01-16,5193 Ellis Tunnel Suite 645,North Robertview,Syrian Arab Republic,Enterprise,Churned,2025-04-19,2025-12-03,16,8482.97
+160,Lisa,Walker,Male,melissa00@example.net,705-607-0308x7921,1998-06-17,9802 Phillip Causeway,Lopezberg,Vanuatu,Free,Active,2025-07-25,2026-05-18,25,2014.38
+161,Kathryn,Lewis,Non-binary,myu@example.com,828-789-1574,1973-04-12,2681 Thomas Route,Amandastad,Belize,Basic,Churned,2025-09-10,2025-11-23,90,12067.64
+162,Nicole,Johnson,Male,robertclarke@example.net,(577)923-1049x08138,1961-10-27,097 Kimberly Field,Lake Amanda,Greece,Premium,Active,2025-07-08,2026-04-26,62,3218.25
+163,Joseph,Brooks,Non-binary,duane51@example.com,940-542-5556x38225,1997-08-10,368 Baker Port,Guerreromouth,Bhutan,Enterprise,Inactive,2023-03-13,2023-05-31,68,1172.58
+164,Michael,Chandler,Male,xfrench@example.org,932.989.0031x95048,1961-08-15,861 Jacobs Streets Suite 144,Jenniferhaven,Lesotho,Free,Churned,2025-06-07,2025-11-29,4,2814.18
+165,Margaret,Lee,Female,jasonflores@example.org,(683)475-3685x3521,1976-10-11,0265 Carr Fort Apt. 685,East Chloe,Botswana,Basic,Active,2023-09-15,2025-09-01,23,7539.37
+166,Derek,Miller,Female,ryan56@example.com,+1-453-941-0369,1994-12-12,152 Kennedy Pine,Lake Carla,Liechtenstein,Free,Inactive,2023-07-11,2023-12-30,93,7690.03
+167,Mary,Gomez,Female,makayla37@example.com,001-590-726-2729x20203,1983-10-15,8696 Jason Square Apt. 801,East Meghan,French Polynesia,Free,Churned,2024-10-05,2024-11-20,2,11279.14
+168,Michael,Jones,Male,sarasantos@example.net,+1-686-252-3330x3826,1969-02-11,01035 Kaufman Lodge,Martinezville,Seychelles,Premium,Inactive,2024-09-04,2025-06-09,13,10142.98
+169,Julie,Curry,Female,barbarasmith@example.com,557.453.9139x1056,1993-03-07,770 Thomas Court Apt. 999,North Rodneytown,Wallis and Futuna,Premium,Inactive,2022-12-18,2023-03-24,10,9346.84
+170,Nicholas,Kim,Non-binary,sandersdonna@example.org,848.612.0858x66329,1966-09-02,2432 Thompson Point,Joshuaville,Tonga,Enterprise,Churned,2025-05-26,2026-07-15,82,1072.67
+171,Noah,Hill,Female,denisevega@example.org,001-427-844-4580,1974-06-08,08577 Morgan Cliff Apt. 581,Micheleland,Comoros,Basic,Active,2024-12-21,2025-01-16,29,7743.18
+172,Phyllis,Reyes,Male,daniel21@example.com,(815)244-0048,1979-09-10,841 Katherine Mountains,Floresport,Panama,Premium,Inactive,2026-01-31,2026-04-20,90,9578.39
+173,Christy,Fischer,Female,adamfoster@example.com,517-390-2264x34910,2000-09-09,5872 Mendez Neck,New Jocelynstad,Cote d'Ivoire,Premium,Active,2026-07-11,2026-07-15,8,8115.93
+174,Sherri,Franklin,Male,stephaniewalker@example.net,8159386533,1967-11-21,2367 Ho Views Suite 148,East Kylieton,Syrian Arab Republic,Basic,Churned,2024-06-05,2025-09-20,18,11553.7
+175,Jacob,Green,Non-binary,joanneadams@example.net,+1-668-325-1281x5376,2004-07-20,0966 Amber View,Jenniferland,Switzerland,Premium,Churned,2022-12-14,2026-05-15,45,8777.48
+176,Chad,Hobbs,Female,acostanicholas@example.net,506-988-0583x92790,1983-10-26,86677 Howard Club,Kennethbury,Bulgaria,Free,Churned,2024-10-01,2026-07-09,58,1210.77
+177,Lisa,Singh,Non-binary,rileymichael@example.com,837.449.8126x2127,1967-05-29,662 Smith Plaza,Raymondmouth,Saint Vincent and the Grenadines,Premium,Inactive,2022-11-29,2026-02-06,75,7185.76
+178,Anna,Smith,Non-binary,dhatfield@example.net,459.496.2732x7833,1966-07-24,451 Wallace View,Loriburgh,Lesotho,Premium,Churned,2022-10-07,2023-08-11,19,8961.45
+179,Amy,Contreras,Female,smithtoni@example.org,858.647.7650x329,1980-01-30,76315 Brown Pine Suite 940,Port Kristinview,Georgia,Enterprise,Churned,2026-07-08,2026-07-25,23,2862.44
+180,Thomas,Taylor,Female,garciageorge@example.org,+1-435-987-4097x223,1982-01-25,23493 Susan Crossing,Lake James,Denmark,Free,Churned,2025-09-15,2026-06-09,78,695.36
+181,Joshua,Day,Male,bsmith@example.com,245.483.8041,1980-10-01,687 Jose Ridge Suite 560,Dominiqueside,Yemen,Free,Inactive,2023-09-29,2025-10-01,29,14679.37
+182,Stephanie,Francis,Male,scott80@example.net,333-367-0664x0185,1980-05-09,57160 Smith Manors Apt. 792,West Amy,Slovenia,Premium,Active,2024-04-21,2025-05-11,91,14918.33
+183,Mary,White,Male,herrerabrenda@example.com,001-409-758-7807x068,2001-05-11,5272 Cortez Brook Apt. 445,Port Peter,New Zealand,Basic,Active,2024-11-03,2024-12-21,78,3066.86
+184,Denise,Velasquez,Male,murphydanielle@example.com,(992)301-9132x98317,1989-05-30,058 Barnett Squares,Johnsonton,Liberia,Premium,Inactive,2022-09-23,2024-07-12,29,7050.49
+185,Michelle,Marks,Male,trevor80@example.net,890.644.5561x5036,1969-04-12,6906 Matthew Wall Suite 918,Laurenstad,Peru,Basic,Churned,2026-07-24,2026-07-26,18,4640.41
+186,Danny,Fuentes,Female,sarah53@example.org,668-390-8197x7395,1982-06-19,1668 Fields Shoals,West Tamara,Bhutan,Free,Inactive,2024-06-08,2025-03-31,37,7264.57
+187,Laurie,Cummings,Male,calexander@example.net,(364)881-6745x65256,1991-12-05,55208 Alyssa Fall Suite 721,East Rachel,Palestinian Territory,Basic,Inactive,2023-08-07,2025-10-16,118,12100.96
+188,Anthony,Morris,Female,nicole15@example.net,+1-385-210-7960,1964-07-05,094 Brandy Terrace Apt. 903,West Michael,Sweden,Free,Inactive,2024-05-09,2026-06-24,26,8560.29
+189,Jennifer,Black,Female,nowen@example.com,(498)287-6906,1963-08-17,07999 Perez Mount Suite 346,New Megan,Russian Federation,Enterprise,Churned,2024-12-01,2025-01-06,93,5550.96
+190,Brittany,Owens,Female,ngonzalez@example.net,+1-836-839-8221x1941,1995-08-10,70217 Martin Haven Suite 400,New Raymondland,British Virgin Islands,Basic,Churned,2025-05-03,2026-06-29,25,3231.44
+191,Kevin,Roman,Female,dperez@example.com,(544)461-0564,1955-09-25,95296 Parker Vista,South Christinehaven,Ireland,Premium,Active,2023-06-04,2025-01-07,3,10018.93
+192,Anita,Miller,Female,yatesbetty@example.org,539.215.1311x591,1992-01-07,3250 Hughes Avenue,East Dawnton,Bangladesh,Enterprise,Active,2023-03-31,2026-01-02,58,14082.6
+193,Brittney,Campbell,Non-binary,taylormichael@example.net,001-785-240-8267x65689,1973-06-05,409 Wayne Plains Suite 746,West Amandastad,Trinidad and Tobago,Free,Active,2023-06-16,2024-11-12,3,7449.17
+194,Thomas,Crawford,Female,edwardburnett@example.net,+1-297-884-8046x964,1957-07-22,2306 Harmon Haven,Hannahside,Turks and Caicos Islands,Basic,Active,2023-04-25,2024-11-19,69,3127.37
+195,Justin,Ritter,Male,steven55@example.org,385-904-3575,1968-08-08,40337 Osborne Key,Julieport,Isle of Man,Free,Churned,2026-07-10,2026-07-12,91,10599.15
+196,Sandra,Gibson,Non-binary,danielswendy@example.org,505-449-2480,1957-04-14,942 Jose Manor Suite 744,Samuelbury,Egypt,Free,Active,2022-11-14,2024-06-01,107,6425.07
+197,Amanda,Mora,Male,stephanie11@example.org,+1-485-629-4524x04927,1991-06-26,6413 Ross Drive,New Nathanhaven,Trinidad and Tobago,Enterprise,Active,2025-08-13,2026-07-04,73,4343.89
+198,Katherine,Baker,Female,moonbrendan@example.org,536-643-5299x6467,1993-04-10,43971 Soto Extensions Suite 716,Shawmouth,Wallis and Futuna,Free,Inactive,2023-05-31,2025-06-05,26,3886.11
+199,Dominique,Martinez,Female,anna07@example.net,001-671-462-7009x395,1998-04-05,5309 Phillip Corners Apt. 824,New Kristen,Italy,Basic,Churned,2023-09-21,2025-05-14,63,12570.56
+200,Carrie,Gomez,Non-binary,hwilliams@example.net,(855)813-5389,1990-10-01,9312 Smith Unions Apt. 417,Lake Samanthashire,Rwanda,Enterprise,Inactive,2023-10-10,2026-07-12,1,11677.58
