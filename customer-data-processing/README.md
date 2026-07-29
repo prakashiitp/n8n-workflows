@@ -4,7 +4,7 @@ A simple n8n workflow that reads customer records from Google Sheets, transforms
 
 ## Workflow Preview
 
-> Add your workflow screenshot here.
+![Workflow](workflow.png)
 
 ---
 
