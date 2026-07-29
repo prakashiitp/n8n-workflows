@@ -85,7 +85,7 @@ Import the CSV into Google Sheets before running the workflow.
 - `workflow.json` — Exported n8n workflow
 - `README.md` — Documentation
 - `workflow.png` — Workflow preview
-- `sample-data/customer_mock_data.csv` — Sample dataset
+- `customer_mock_data.csv` — Sample dataset
 
 ---
 
@@ -97,5 +97,3 @@ This workflow demonstrates the fundamentals of data processing in n8n, including
 - Transforming data with Edit Fields
 - Using conditional logic with an IF node
 - Routing records based on conditions
-
-A great beginner workflow for understanding how data flows through an automation.
