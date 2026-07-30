@@ -102,7 +102,7 @@ customer-feedback-ai-agent/
 
 ### Workflow
 
-![Workflow](workflow.png)
+![Workflow](workflow.jpg)
 
 ### Blueprint
 
