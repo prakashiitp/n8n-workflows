@@ -5,10 +5,11 @@ A curated collection of AI-powered workflows built with n8n, showcasing AI Agent
 ## Workflows
 
 | Workflow | Description | Status |
-|----------|-------------|:------:|
+|----------|-------------|--------|
 | AI Role-Based Content Generator | Generates personalized AI content based on user roles and input. | ✅ |
 | Customer Data Filter | Retrieves customer records, transforms fields, and filters data using conditional logic. | ✅ |
 | Customer Data Processing | Reads customer data from Google Sheets, transforms the required fields, and routes records using an IF node. | ✅ |
+| Customer Feedback AI Agent | Collects customer feedback, classifies it using an AI Agent, routes it to dedicated Slack channels, updates Airtable, and sends acknowledgement emails automatically. | ✅ |
 | More workflows coming soon... | New AI automations and integrations will be added regularly. | 🚧 |
 
 ## Tech Stack
