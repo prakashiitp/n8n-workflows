@@ -112,10 +112,6 @@ customer-feedback-ai-agent/
 
 ![Airtable](airtable.png)
 
-### Slack Notification
-
-![Slack](slack.png)
-
 ### Customer Email
 
 ![Email](email.png)
