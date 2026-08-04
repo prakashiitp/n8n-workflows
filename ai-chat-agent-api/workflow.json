@@ -1,0 +1,120 @@
+{
+  "name": "AI Chat Agent API",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "mychatapp",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -992,
+        -208
+      ],
+      "id": "aae9319d-788f-4949-bef1-92ab52c84db7",
+      "name": "Webhook",
+      "webhookId": "aa7580dd-24b1-498f-8d4b-7122d57320c6"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.message }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -736,
+        -208
+      ],
+      "id": "6e77a005-d0ff-4811-a03b-56ba42d524db",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "deepseek/deepseek-chat",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        -816,
+        16
+      ],
+      "id": "d739b34d-c101-4d38-8ac2-a5e036cb7139",
+      "name": "OpenRouter Chat Model",
+      "credentials": {
+        "openRouterApi": {
+          "id": "YlZ7HLXFLbIBHnmk",
+          "name": "OpenRouter account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -384,
+        -208
+      ],
+      "id": "ced5cd48-339a-4b46-9efd-794c51a92f33",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "022b4cf3-4b0a-43c9-8d75-c39dfc1e8213",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f46a764fcce7b00f56504bcc09c81d87f84fc75260fd6e7210811419de33af54"
+  },
+  "nodeGroups": [],
+  "id": "FLwg1QqdTAvfmg2W",
+  "tags": []
+}
