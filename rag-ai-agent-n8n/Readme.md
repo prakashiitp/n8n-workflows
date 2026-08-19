@@ -124,13 +124,15 @@ AI Agent
         ▼
 Relevant AI Response
 ```
+## Screenshots
+
 ### RAG AI Agent
 
-rag-agent.png
+![RAG AI Agent](rag-agent.png)
 
 ### Document Processing & Vector Storage
 
-document-processing.png
+![Document Processing & Vector Storage](document-processing.PNG)
 
 # What I Learned
 
