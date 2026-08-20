@@ -124,17 +124,22 @@ Send_a_message_in_Gmail
 ```
 This was also used to test real tool execution through MCP.
 
-# Screenshots
+## Screenshots
 
-MCP Server
+### MCP Server
+![MCP Server](mcp-server.png)
 
-MCP Tools in Cline
+### MCP Tools in Cline
+![MCP Client](mcp-client.png)
 
-AI Agent Workflow
+### AI Agent Workflow
+![AI Agent Workflow](ai-agent.png)
 
-MCP Tool Execution
+### MCP Tool Execution
+![Tool Execution](tool-execution.png)
 
-Email Sent Successfully
+### Email Sent Successfully
+![Email Sent](email-result.png)
 
 # Workflow Files
 ```
@@ -191,6 +196,8 @@ For the MCP Server, configure the required Gmail credentials and publish the wor
 
 For the AI Agent workflow, configure the required AI model and MCP Client connection.
 
-```Do not commit API keys, OAuth credentials, or other sensitive information to the repository.```
+```
+> Note: Do not commit API keys, OAuth credentials, or other sensitive information to the repository.
+```
 
 If you find this project useful, consider giving the repository a star⭐.
