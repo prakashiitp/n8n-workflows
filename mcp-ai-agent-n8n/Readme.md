@@ -145,7 +145,8 @@ This was also used to test real tool execution through MCP.
 ```
 mcp-ai-agent-n8n/
 │
-├── workflow.json
+├── mcp-client.json
+├── mcp-server.json
 ├── README.md
 ├── workflow.png
 ├── mcp-server.png
@@ -188,16 +189,19 @@ Result
 - Explore MCP resources and prompts.
 - Build more autonomous AI Agent workflows.
 
-# Import Workflow
+## Import Workflows
 
-Import the included workflow.json file into n8n and configure the required credentials.
+This project contains two n8n workflows:
+
+- `mcp-server.json` — MCP Server exposing Gmail tools.
+- `mcp-client.json` — AI Agent workflow connected to the MCP Server.
+
+Import both workflow files into n8n and configure the required credentials.
 
 For the MCP Server, configure the required Gmail credentials and publish the workflow before connecting an external MCP client.
 
 For the AI Agent workflow, configure the required AI model and MCP Client connection.
 
-```
-> Note: Do not commit API keys, OAuth credentials, or other sensitive information to the repository.
-```
+> **Note:** Do not commit API keys, OAuth credentials, or other sensitive information to the repository.
 
 If you find this project useful, consider giving the repository a star⭐.
