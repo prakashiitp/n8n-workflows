@@ -127,7 +127,7 @@ This was also used to test real tool execution through MCP.
 ## Screenshots
 
 ### MCP Server
-![MCP Server](mcp-server.png)
+![MCP Server](workflow.png)
 
 ### MCP Tools in Cline
 ![MCP Client](mcp-client.png)
