@@ -73,10 +73,20 @@ The agent is configured to use the knowledge base first when answering Cloud Com
 
 The agent can be asked questions such as:
 
-```What is Software-Defined Networking?```
-```Explain Lamport timestamps.```
-```What is the difference between full virtualization and paravirtualization?```
-```What are the challenges of SDN?```
+```
+What is Software-Defined Networking?
+```
+
+```
+Explain Lamport timestamps.
+```
+
+```
+What is the difference between full virtualization and paravirtualization?
+```
+```
+What are the challenges of SDN?
+```
 
 The agent retrieves the relevant information from the knowledge base and responds through the voice interface.
 
@@ -96,3 +106,63 @@ AI Agent
    ▼
 Respond to Webhook
 ```
+## Webhook
+
+Receives the Cloud Computing question from the ElevenLabs agent.
+
+The webhook expects the question through the searchQuery parameter.
+
+## AI Agent
+
+Processes the user's question and uses the available knowledge base to retrieve the relevant information before generating the response.
+
+## OpenRouter Chat Model
+
+Provides the language model used by the n8n AI Agent.
+
+## Google Sheets
+
+Acts as the knowledge base containing the Cloud Computing notes.
+
+## Respond to Webhook
+
+Returns the generated response to the ElevenLabs voice agent.
+
+## Voice Agent
+
+The voice interface is built using ElevenLabs.
+
+The voice agent:
+
+- Accepts questions through voice
+- Sends the question to the n8n webhook
+- Receives the generated response
+- Converts the response into voice
+
+The ElevenLabs agent configuration is included in:
+```
+elevenlabs-agent.json
+```
+This file contains the relevant agent configuration and webhook tool setup used for the project.
+
+## Tech Stack
+- ElevenLabs — Voice AI interface
+- n8n — Workflow automation and AI Agent
+- OpenRouter — LLM provider
+- Google Sheets — Knowledge base
+- Webhooks — Communication between ElevenLabs and n8n
+## Project Structure
+```
+cloud-computing-voice-ai-agent/
+│
+├── workflow.json
+├── elevenlabs-agent.json
+├── workflow.png
+└── README.md
+```
+## Files
+- workflow.json — n8n workflow
+- elevenlabs-agent.json — ElevenLabs agent configuration
+- workflow.png — n8n workflow diagram
+- README.md — Project documentation
+
