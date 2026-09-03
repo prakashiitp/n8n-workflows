@@ -28,6 +28,8 @@ Respond to Webhook
   ▼
 Voice Response
 ```
+![Workflow](workflow.png)
+
 ## How It Works
 - User asks a Cloud Computing question through the voice agent.
 - ElevenLabs sends the question to the n8n webhook.
@@ -70,13 +72,18 @@ The agent is configured to use the knowledge base first when answering Cloud Com
 ```
 "What are the challenges of SDN?"
 ```
+![ElevenLabs Voice Agent](elevenlabs-agent.png)
+
 The agent searches the Cloud Computing knowledge base and returns the relevant information through a voice response.
 
 ## Files
-- workflow.json — n8n workflow
-- elevenlabs-agent.json — ElevenLabs agent configuration
-- workflow.png — n8n workflow diagram
-- README.md — Project documentation
+
+- `workflow.json` — n8n workflow
+- `elevenlabs-agent.json` — ElevenLabs agent configuration
+- `workflow.png` — n8n workflow diagram
+- `elevenlabs-agent.png` — ElevenLabs voice agent
+- `README.md` — Project documentation
+  
 ## What I Learned
 - Building voice AI agents
 - Working with n8n AI Agents
