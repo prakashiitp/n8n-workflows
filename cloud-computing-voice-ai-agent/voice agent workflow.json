@@ -1,0 +1,163 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.searchQuery }}",
+        "options": {
+          "systemMessage": "You are a helpful AI assistant that answers questions using a Google Sheets knowledge base.\n\nYour job is to understand the user's request, retrieve the relevant information using the available tools, and provide a concise answer.\n\n## Knowledge Base\n\nThe Google Sheet contains information about Cloud Computing, including:\n- Cloud Computing & Virtualization\n- Software-Defined Networking\n- Distributed Systems\n- Cloud Storage & NoSQL\n- Peer-to-Peer Systems\n- Cloud Applications\n- MapReduce\n- Apache Spark\n- Apache Kafka\n- Leader Election\n- Clock Synchronization\n- Cassandra\n- HBase\n- And related concepts, algorithms, architectures, and technologies.\n\n## Rules\n\n1. For every user question, first use `read_google_sheet` to retrieve the relevant information.\n2. Answer using the information retrieved from the database.\n3. Do not answer from your own knowledge when the requested information should come from the database.\n4. If the database does not contain the requested information, say:\n   \"Sorry, I don't have that information available.\"\n5. Never mention \"Google Sheet\" or \"sheet\" to the user. Refer to it as the \"database\".\n6. Keep responses concise and natural, preferably within 3 sentences.\n7. If the user's request is unclear, ask a short clarification question.\n\n## Calendar\n\nOnly use `get_google_calendar` when the user asks about slot/date availability.\n\nOnly use `create_google_calendar` when the user wants to book a slot.\n\nWhen booking:\n1. Ask for the user's full name and email address if they have not provided them.\n2. Create the slot with the relevant booking details.\n3. After successful booking, confirm the slot briefly.\n4. Never call a booking an \"event\". Always call it a \"slot\".\n\n## Email Confirmation\n\nOnly use the email tool after the user confirms the booking and the required email address is available.\n\nSend the booking confirmation to the user's email address.\n\n## Response\n\nAlways provide a direct answer to the user's question after using the appropriate tool."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -480,
+        -96
+      ],
+      "id": "cc26d122-3071-4bf9-b61e-e4ad9f4a4e1d",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "openrouter/free",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        -672,
+        176
+      ],
+      "id": "b86b53b6-dd39-4974-93ef-3e41557db06a",
+      "name": "OpenRouter Chat Model",
+      "credentials": {
+        "openRouterApi": {
+          "id": "mRRjSnm0xaRxObFQ",
+          "name": "OpenRouter account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1DTak01vP42UtPT20ETgEsMS9oszHUVF0M6FSpSsJczE/edit?usp=sharing",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1158266985,
+          "mode": "list",
+          "cachedResultName": "Knowledge Base",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1DTak01vP42UtPT20ETgEsMS9oszHUVF0M6FSpSsJczE/edit#gid=1158266985"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        -192,
+        160
+      ],
+      "id": "d1ce6b6c-1012-46e1-ad0d-62618b5b5baa",
+      "name": "Get row(s) in sheet in Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "KOj34Nda6DjYvdAt",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "informationagent",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -832,
+        -96
+      ],
+      "id": "21ff427a-ecbf-482d-b83c-58ad8fb038cd",
+      "name": "Webhook",
+      "webhookId": "eebdc5c5-cd4d-4efa-bdcc-51475eb609ea"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        0,
+        -96
+      ],
+      "id": "7fb96ad7-0839-4396-be22-43aa6941ebd3",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "OpenRouter Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet in Google Sheets": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "d20509a6-4b61-4d85-9818-85fab013f50f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "b2c7117e2f780bec8045915b7cc3e60b5f6bb5c9768f737e0ff21b2c67d38a93"
+  },
+  "nodeGroups": [],
+  "id": "oeBjHMBcdHxtz6Cw",
+  "tags": []
+}
