@@ -28,7 +28,7 @@ Respond to Webhook
   ▼
 Voice Response
 ```
-![Workflow](workflow.png)
+![Workflow](workflow.jpg)
 
 ## How It Works
 - User asks a Cloud Computing question through the voice agent.
