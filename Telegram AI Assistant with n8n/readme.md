@@ -1,12 +1,11 @@
-# Telegram AI Assistant with n8n
+## Telegram AI Assistant with n8n
 
-An AI Agent workflow built with **n8n** that works directly through **Telegram**.
+An AI Agent workflow built with n8n that works directly through Telegram.
 
-The assistant can handle normal conversations as well as **PDF documents**. It can receive a PDF through Telegram, retrieve the file, extract its text, analyze the content using an AI Agent, and send the response back to the user.
+The assistant can handle both normal conversations and PDF documents. It can receive a PDF through Telegram, retrieve the file, extract its text, analyze the content using an AI Agent, and return the response directly to the user.
 
-## Workflow
-
-```text
+Workflow
+```
 Telegram Trigger
        │
        ▼
@@ -17,50 +16,45 @@ Text Message        PDF File
    │                  │
    ▼                  ▼
 AI Agent           Get File
-   │                  │
-   │                  ▼
-   │            Extract from PDF
-   │                  │
-   │                  ▼
-   │              AI Agent
-   │                  │
-   └────────┬─────────┘
-            ▼
-     Send Telegram Message
+                      │
+                      ▼
+                Extract from PDF
+                      │
+                      ▼
+                 PDF AI Agent
+                      │
+   ┌──────────────────┘
+   │
+   ▼
+Send Telegram Message
 ```
 ## Features
-
 - Chat with an AI Agent directly through Telegram.
-- Detect and handle PDF file messages.
-- Retrieve uploaded files using Telegram.
+- Handle both normal messages and PDF files.
+- Retrieve and process PDFs sent through Telegram.
 - Extract text from PDF documents.
-- Analyze extracted PDF content using an AI Agent.
-- Generate short and useful document summaries.
+- Analyze extracted content using a dedicated AI Agent.
+- Generate concise document summaries and answers.
 - Maintain conversational context using Simple Memory.
-- Perform calculations using the Calculator tool.
-- Search the web using Tavily.
-- Make external HTTP requests.
+- Use Calculator, Tavily Search, and HTTP Request tools.
 - Use OpenRouter as the AI model provider.
-- Return both normal chat responses and document analysis through Telegram.
-
+- Return responses directly to the Telegram user.
 ## Tech Stack
-
 - n8n
 - Telegram
 - AI Agent
 - OpenRouter
 - Simple Memory
-- PDF Text Extraction
+- PDF Processing
 - Calculator
 - Tavily Search
 - HTTP Request
 
 ## Architecture
 
-The workflow is divided into two paths based on the incoming Telegram message.
+The workflow uses conditional routing to process incoming Telegram messages through two paths: normal chat and PDF processing.
 
-Text Message
-
+### Text Message
 ```
 Telegram
    │
@@ -78,7 +72,7 @@ Send Telegram Message
 ```
 The AI Agent handles normal conversations and can use connected tools such as memory, calculator, web search, and HTTP requests when required.
 
-PDF File
+### PDF File
 ```
 Telegram
    │
@@ -95,7 +89,7 @@ Get File
 Extract from PDF
    │
    ▼
-AI Agent
+PDF AI Agent
    │
    ▼
 Send Telegram Message
@@ -103,38 +97,32 @@ Send Telegram Message
 When a PDF is received, the workflow retrieves the file and extracts its text before passing the content to the document-analysis AI Agent.
 
 ## How It Works
-
 - The user sends a message or PDF through Telegram.
-- The **Telegram Trigger** receives the incoming update.
-- The **IF** node determines whether the request is a normal message or a PDF file.
-- Text messages are sent directly to the main **AI Agent**.
-- PDF messages are passed to **Get File** to retrieve the document.
-- **Extract from File** extracts the text from the PDF.
-- The extracted content is passed to **AI Agent1** for analysis.
-- The generated response is sent back to Telegram using **Send a text message**.
-
-### Example
+- The Telegram Trigger receives the incoming update.
+- The IF node determines whether the input is a normal message or a PDF.
+- Text messages are sent directly to the main AI Agent.
+- PDF messages are passed to Get File to retrieve the document.
+- Extract from File extracts the text from the PDF.
+- The extracted content is passed to the PDF AI Agent for analysis.
+- The generated response is sent back through Telegram using Send a text message.
+Example
 
 A user can send:
-
-```text
+```
 [PDF File]
 
 Explain this PDF in short.
 ```
-
 The workflow processes the document and returns a concise summary directly in Telegram.
 
 The same assistant can also handle normal requests such as:
-
-```text
+```
 What is the difference between REST and GraphQL?
 ```
-## AI Agent Tools
+### AI Agent Tools
 
-The main AI Agent is connected to several tools:
-
-```text
+The main AI Agent is connected to multiple tools:
+```
 AI Agent
    │
    ├── OpenRouter Chat Model
@@ -143,14 +131,12 @@ AI Agent
    ├── Tavily Search
    └── HTTP Request
 ```
+These tools allow the agent to handle more than simple text generation and use external capabilities when required.
 
-This allows the agent to go beyond simple text generation and interact with tools based on the user's request.
-
-## PDF Analysis Flow
+### PDF Analysis Flow
 
 The PDF workflow demonstrates a complete document-processing pipeline:
-
-```text
+```
 Telegram File
       ↓
 File Retrieval
@@ -163,40 +149,60 @@ Summary / Answer
       ↓
 Telegram
 ```
-
 This separates file handling, document extraction, and AI processing into individual workflow steps, making the automation easier to understand and extend.
 
 ## Screenshots
-Complete n8n Workflow
+
+### Complete n8n Workflow
+
+![Complete n8n Workflow](workflow.png)
 
 The complete workflow showing Telegram message handling, conditional routing, AI Agents, PDF processing, memory, and external tools.
 
-## PDF Analysis Through Telegram
+### Normal AI Chat
 
-A PDF is sent through Telegram and processed by the workflow. The extracted content is analyzed by the AI Agent and the response is returned directly in Telegram.
+![Normal AI Chat](telegram-chat.png)
 
-## Normal AI Chat Through Telegram
+The assistant handling a normal conversational message directly through Telegram.
 
-The same Telegram assistant can also handle normal conversational messages without going through the PDF processing path.
+### PDF Upload
 
-##  Workflow Files
+![PDF Upload](telegram-pdf.png)
+
+A PDF document being sent to the Telegram AI Assistant for processing.
+
+### PDF Analysis Response
+
+![PDF Analysis Response](telegram-pdf-response.png)
+
+The AI Agent analyzing the extracted PDF content and returning a response directly in Telegram.
+
+### Telegram Assistant Response
+
+![Telegram Assistant Response](telegram-response.png)
+
+A normal Telegram interaction demonstrating the assistant responding successfully.
+
+## Workflow Files
 ```
 telegram-ai-agent/
 │
 ├── workflow.json
 ├── README.md
 ├── workflow.png
+├── telegram-chat.png
 ├── telegram-pdf.png
-└── telegram-chat.png
+├── telegram-pdf-response.png
+└── telegram-response.png
 ```
-Import the workflow JSON into n8n and configure the required credentials.
+Import the workflow.json file into n8n and configure the required credentials.
 
 ## What I Learned
 
 While building this project, I learned:
-
 - How to build an AI Agent workflow using n8n.
 - How to connect Telegram with an AI Agent.
+- How to design multi-path automation workflows for different types of user input.
 - How to route different message types using conditional logic.
 - How to retrieve files sent through Telegram.
 - How to extract text from PDF documents inside an automation workflow.
@@ -221,17 +227,15 @@ Response
 Telegram
 ```
 ## Future Improvements
-- Support additional document formats.
-- Add image and document understanding.
+- Support additional document and image formats.
 - Improve handling of long PDF documents.
 - Add voice-message support.
 - Add more external tools and APIs.
 - Add authentication and user-specific settings.
 - Improve conversational memory.
-
 ## Import Workflow
 
-Import the workflow JSON into your n8n instance and configure the required credentials.
+Import the ```workflow.json``` file into your n8n instance and configure the required credentials.
 
 Required services include:
 
