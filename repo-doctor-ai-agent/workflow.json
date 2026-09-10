@@ -1,0 +1,304 @@
+{
+  "name": "My workflow 3",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.5,
+      "position": [
+        -336,
+        0
+      ],
+      "id": "2533dfed-33aa-474f-bf22-209e365a13f7",
+      "name": "Telegram Trigger",
+      "webhookId": "",
+      "credentials": {
+        "telegramApi": {
+          "id": "",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('Telegram Trigger').item.json.message.text }}",
+        "options": {
+          "systemMessage": "You are Repo Doctor, an AI GitHub repository auditor.\n\nWhen the user asks to audit, review, analyze, or inspect a GitHub repository:\n\n1. First inspect the repository using the available GitHub tools.\n2. Check the repository structure and important files such as README.md, workflow files, configuration files, and source files when available.\n3. Use web search when additional information about a technology or project is required.\n4. Base your conclusions on the repository data you actually retrieved.\n5. Do not invent files, technologies, features, issues, or statistics.\n\nReturn the audit in this format:\n\nREPO DOCTOR\n\nRepository: <owner/repository>\n\nOverall Score: <score>/10\n\nArchitecture: <score>/10\nDocumentation: <score>/10\nCode/Workflow Quality: <score>/10\nSecurity: <score>/10\nPortfolio Value: <score>/10\n\nStrengths:\n- ...\n- ...\n- ...\n\nIssues:\n- ...\n- ...\n- ...\n\nTop 3 Improvements:\n1. ...\n2. ...\n3. ...\n\nRecruiter Impression:\n<short honest assessment>\n\nKeep the response concise but useful.\n\nFor normal questions about a repository, answer the question directly instead of forcing the full audit format.\n\nSecurity:\n- Never reveal API keys, access tokens, passwords, secrets, credentials, credential IDs, private URLs, or other sensitive configuration details found in repository files.\n- If sensitive information is detected, mention only that a potential credential or sensitive configuration was found.\n- Never reproduce the secret value or identifier.."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -48,
+        0
+      ],
+      "id": "09de0595-9c00-4280-be19-0990f9966127",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "google/gemini-2.5-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        -336,
+        208
+      ],
+      "id": "d2803816-6fce-40dd-98f5-aae2639ee45b",
+      "name": "OpenRouter Chat Model",
+      "credentials": {
+        "openRouterApi": {
+          "id": "",
+          "name": "OpenRouter account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        320,
+        0
+      ],
+      "id": "1339b5bd-290c-4dbb-a138-5f12324b109d",
+      "name": "Send a text message",
+      "webhookId": "",
+      "credentials": {
+        "telegramApi": {
+          "id": "",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.message.chat.id }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -176,
+        208
+      ],
+      "id": "4a507d65-b8f4-4e59-bdbf-4ca8fa698fa9",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        208
+      ],
+      "id": "4d7093dd-75f4-4cd4-9d6e-0e4dff8ee770",
+      "name": "Calculator"
+    },
+    {
+      "parameters": {
+        "query": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Query', ``, 'string') }}",
+        "options": {}
+      },
+      "type": "@tavily/n8n-nodes-tavily.tavilyTool",
+      "typeVersion": 1,
+      "position": [
+        512,
+        208
+      ],
+      "id": "f62f80cc-6fdf-4f23-8506-01e5205af1f6",
+      "name": "Search in Tavily",
+      "credentials": {
+        "tavilyApi": {
+          "id": "",
+          "name": "Tavily account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Fetches public GitHub repository information using the repository owner and repository name. Use this tool when the user provides a GitHub repository URL and asks to analyze, audit, or understand the repository.",
+        "url": "=https://api.github.com/repos/{{$fromAI('owner')}}/{{$fromAI('repo')}}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.5,
+      "position": [
+        80,
+        208
+      ],
+      "id": "3d12bc40-3742-4292-8403-9f40832a7e29",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Lists the files and folders in a public GitHub repository. Use this to inspect the repository structure and find important files such as README.md, package.json, requirements.txt, and source code.",
+        "url": "=https://api.github.com/repos/{{$fromAI('owner', 'GitHub repository owner or username')}}/{{$fromAI('repo', 'GitHub repository name')}}/contents",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.5,
+      "position": [
+        224,
+        208
+      ],
+      "id": "fd7ce742-51c7-4695-9958-17235c9cdc18",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Fetches the raw content of a file from a public GitHub repository. Use this to inspect README files, configuration files, documentation, and other important repository files during an audit.",
+        "url": "=https://api.github.com/repos/{{$fromAI('owner', 'GitHub repository owner or username')}}/{{$fromAI('repo', 'GitHub repository name')}}/contents/{{$fromAI('path', 'Path of the file inside the repository, for example README.md')}}",
+        "sendHeaders": true,
+        "specifyHeaders": "=keypair",
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github.raw+json"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.5,
+      "position": [
+        368,
+        208
+      ],
+      "id": "bcd39cf0-6935-45c9-ad2e-3a3a00b0e233",
+      "name": "HTTP Request2"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search in Tavily": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request2": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": ""
+  },
+  "nodeGroups": [],
+  "id": "5zYLxDcyCOCARHNk",
+  "tags": []
+}
