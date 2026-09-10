@@ -4,7 +4,7 @@ Repo Doctor is an AI-powered GitHub repository auditing agent built with **n8n**
 
 The user sends a public GitHub repository link through Telegram, and the agent inspects the repository using the GitHub REST API and AI tools. It then generates a structured audit with scores, strengths, issues, and recommended improvements.
 
----
+
 
 ## Workflow
 
